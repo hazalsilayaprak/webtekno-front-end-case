@@ -1,0 +1,195 @@
+@import './_headings.scss';
+
+@font-face {
+    font-family: "PlusJakartaSans-Regular";
+    src: url("/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlusJakartaSans-Medium";
+    src: url("/fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlusJakartaSans-Bold";
+    src: url("/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SFProText-Regular";
+    src: url("/fonts/SFProText-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SFProText-Medium";
+    src: url("/fonts/SFProText-Medium.ttf") format("truetype");
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $white;
+    letter-spacing: -0.6px;
+    font-family: "PlusJakartaSans-Bold" !important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $heading-primary-font-family !important;
+    color: $primary-text-color !important;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+    
+}
+
+.h1 {
+    font-size: $h1-font-size !important;
+    line-height: $h1-line-height !important;
+}
+
+h1.lg {
+    font-size: $h1-lg-font-size;
+    // font-family: $h1-lg-font-family !important;
+    font-weight: $h1-lg-font-weight;
+}
+
+.h1.lg {
+    font-size: $h1-lg-font-size !important;
+    // font-family: $h1-lg-font-family !important;
+    font-weight: $h1-lg-font-weight !important;
+}
+
+h1.md {
+    font-size: $h1-md-font-size;
+    // font-family: $h1-md-font-family !important;
+    font-weight: $h1-md-font-weight;
+}
+
+.h1.md {
+    font-size: $h1-md-font-size !important;
+    // font-family: $h1-md-font-family !important;
+    font-weight: $h1-md-font-weight !important;
+}
+
+h1.dark {
+    color: $primary-text-color;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+}
+
+.h2 {
+    font-size: $h2-font-size !important;
+}
+
+h2.dark {
+   color: $primary-text-color !important;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h3.colored {
+    color: $primary-color;
+    letter-spacing: 4px;
+}
+
+.h3 {
+    font-size: $h3-font-size !important;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    line-height: $h4-line-height;
+}
+
+.h4 {
+    font-size: $h4-font-size !important;
+    line-height: $h4-line-height !important;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+.h5 {
+    font-size: $h5-font-size !important;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
+
+.h6 {
+    font-size: $h6-font-size !important;
+}
+
+
+span {
+    font-size: 13px;
+    color: $secondary-text-color;
+    font-family: "SFProText-Regular" !important;
+}
+
+.span {
+    font-size: 13px !important;
+}
+
+span.sm {
+    font-size: 11px;
+}
+
+.span.sm {
+    font-size: 11px !important;
+    line-height: 13.86;
+    letter-spacing: 2px;
+}
+
+span.footnote {
+    display: inline-block;
+}
+
+.span.footnote {
+    display: inline-block !important;
+}
+
+span.overline {
+    font-family: "PlusJakartaSans-Bold" !important;
+    letter-spacing: 2px;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+span.w {
+    color: $white;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+span.lg {
+    font-size: 14px;
+}
