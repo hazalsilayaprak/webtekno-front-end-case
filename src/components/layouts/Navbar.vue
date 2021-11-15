@@ -4,7 +4,7 @@
     <div id="navbar" :class="fixed || isMobile ? 'fixed' : ''">
       <div class="container">
         <div class="navbar-wrapper" v-if="!isMobile">
-          <div class="flex _vc">
+          <div class="flex _vc w-100">
             <router-link to="/">
               <img class="logo" src="../../assets/images/logo.svg" alt="" />
             </router-link>
@@ -32,7 +32,7 @@
               </li>
             </ul>
             <!-- :style="`opacity: ${showSearchInput ? '1' : '0' }`" -->
-            <div v-show="showSearchInput" style="transition: ease-out .2s; width: 100;">
+            <div v-show="showSearchInput" style="width: 70%;">
               <form class="w-100" action="#">
                 <div class="input-wrapper">
                   <img src="@/assets/images/icons/search-icon-light-colored.svg" alt="" />
@@ -95,7 +95,7 @@
                       <a href="#" class="user-name">Mehmet Ali Öztekin</a>
                     </div>
                     <ul>
-                      <li v-for="(option, index) in options" :key="index">
+                      <li v-for="(option, index) in options" :key="index" @click="dropdownItemClicked(option)">
                         <div class="flex _vc">
                           <svg class="item-icon" v-html="option.svg"></svg>
                           <div class="notification-content">
@@ -376,10 +376,11 @@
       };
     },
     methods: {
-      // changeTab(value) {
-      //   alert(value)
-
-      // },
+      dropdownItemClicked(option) {
+        if (option.itemLabel === 'dark-mode') {
+          this.modeToggle()
+        }
+      },
       handleScroll() {
         if (!this.isMobile) {
           this.fixed = window.scrollY > 40;
